@@ -1,0 +1,8 @@
+version: '2'
+services:
+  java-web-base:
+    image: java-web-base
+    ports:
+      - "8080:8080"
+    environment:
+      - spring.profiles.active=dev
