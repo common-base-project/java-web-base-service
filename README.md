@@ -1,5 +1,5 @@
 **项目说明** 
-- java-web-base 是一个轻量级的，前后端分离的Java快速开发平台，能快速开发项目并交付
+- java-web-base-service 是一个轻量级的，前后端分离的Java快速开发平台，能快速开发项目并交付
 - 支持MySQL、Oracle、SQL Server、PostgreSQL等主流数据库
 
 <br>
@@ -19,7 +19,7 @@
 
 **项目结构** 
 ```
-java-web-base
+java-web-base-service
 ├─db  项目SQL语句
 │
 ├─common 公共模块
@@ -60,7 +60,7 @@ java-web-base
  **后端部署**
 - 通过git下载源码
 - idea、eclipse需安装lombok插件，不然会提示找不到entity的get set方法
-- 创建数据库 java-web-base，数据库编码为UTF-8
+- 创建数据库 java-web-base-service，数据库编码为UTF-8
 - 执行db/mysql.sql文件，初始化数据
 - 修改application-dev.yml，更新MySQL账号和密码
 - Eclipse、IDEA运行 BaseApplication.java，则可启动项目
@@ -83,7 +83,7 @@ java-web-base
     make docker-all VERSION="staging_v0.0.1" ENV_SERVER_MODE="dev"
     make docker-all VERSION="prod_v0.0.1" ENV_SERVER_MODE="prod"
 
-    docker buildx build --platform linux/amd64 --no-cache -t java-web-base .
+    docker buildx build --platform linux/amd64 --no-cache -t java-web-base-service .
 
 ## 分库分表
     https://shardingsphere.apache.org/
